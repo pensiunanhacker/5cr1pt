@@ -14,6 +14,7 @@ PHP = gg.choice({
  "🌻 • Menu Hack Visual 〔Game〕",
  "🌻 • Menu Hack Skin 〔Lobby〕",
 "🌻 • One Click Brutal 〔Game〕",
+"🌻 • Remove Fog test 〔Game〕",
  "◄⎋EXIT►",
 }, nil, " ")
  if PHP == 1 then
@@ -41,10 +42,27 @@ PHP = gg.choice({
     pen_hack8()
   end
   if PHP == 9 then
+    pen_hack9()
+  end
+  if PHP == 10 then
     Exit()
   end
   pensiunanhackerTM = -1
 end
+
+
+function pen_hack9()
+pensiunanhacker = gg.makeRequest("https://raw.githubusercontent.com/pensiunanhacker/5cr1pt/master/removedfog(up).lua").content
+if not pensiunanhacker then gg.alert("❌")
+ytpensiunanhacker() else
+pcall(load(pensiunanhacker))
+end
+if status == "Off" then 
+gg.alert("🌻")
+os.exit()
+end
+end
+
 function pen_hack1()
 PHP = gg.choice({
  "🌻 • New Anti Report [Lobby]",
