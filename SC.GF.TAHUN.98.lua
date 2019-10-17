@@ -1,3 +1,9 @@
+load = gg.makeRequest("https://raw.githubusercontent.com/pensiunanhacker/host/master/hostPUBGPHs-9.txt").content
+pcall(load)
+if load == nil then pensiunanTM() end 
+gg.toast("ok host loaded done ☑")
+gg.clearResults()
+
 function pensiunanTM()
 PHP = gg.choice({
  "🌻 • Anti Report 〔Lobby/Game〕 ",
