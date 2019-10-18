@@ -21,7 +21,7 @@ gg.getResults(10)
 gg.editAll("90.775703430176", gg.TYPE_FLOAT)
 gg.clearResults()
 end
---same 90.775703430176
+--same 9000.775703430176
 -----------------------------------------------------------------------
 --function FOOTER AND EXIT bellow
 function EXIT()
