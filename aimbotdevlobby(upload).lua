@@ -223,12 +223,15 @@ function BSSREGION8()
   end
   --   gg.addListItems(t)
 --
-gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber("-28,767,403,185,799,424;4,575,657,222,473,777,152", gg.TYPE_FLOAT,false,gg.SIGN_EQUAL,0,-1)
-gg.searchNumber("4,575,657,222,473,777,152", gg.TYPE_FLOAT)
-gg.searchNumber("4,575,657,222,473,777,152", gg.TYPE_FLOAT)
-gg.getResults(9)
-gg.editAll("4,575,657,222,474,196,582", gg.TYPE_FLOAT)
+gg.setRanges(gg.REGION_C_DATA)
+gg.searchNumber("360.0;0.0001;1,478,828,288.0::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResultsCount()
+gg.searchNumber("0.0001", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+if gg.getResultsCount() <= 20 then
+gg.getResults(20)
+gg.editAll("3.4e38", gg.TYPE_FLOAT)
+gg.clearResults()
+else
 gg.clearResults()
 gg.setRanges(32)
 gg.searchNumber("0.00111111114;1.0e32;49.9999961853;24.99999809265", 16, false, 536870912, 0, -1)
@@ -237,6 +240,16 @@ gg.getResults(20)
 gg.editAll("9", 16)
 gg.clearResults()
 pensiunanhacker = "9"
+gg.clearResults()
+gg.setRanges(gg.REGION_C_DATA)
+gg.searchNumber("360.0;0.0001;1,478,828,288.0::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResultsCount()
+gg.searchNumber("0.0001", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+if gg.getResultsCount() <= 20 then
+gg.getResults(20)
+gg.editAll("3.4e38", gg.TYPE_FLOAT)
+gg.clearResults()
+else
 gg.clearResults()
 end
 -----------------------------------------------------------------------
