@@ -92,10 +92,12 @@ if nHome == nil then else EXIT() end
 end
 -----------------------------pastecode room....
 function openBETAvalues()
-gg.searchNumber("1.0F;0.6;0.1;0.125::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("1.0;0.6;0.1;0.125::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.searchNumber("1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(300)
 gg.editAll("9999999999", gg.TYPE_FLOAT)
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("2.718519e-43F;3.7615819e-37F;2.0F;0.00999999978F::200",gg.TYPE_FLOAT,false,gg.SIGN_EQUAL,0,-1)
 gg.clearResults()
 fvckh3ad()
 gg.clearResults()
@@ -131,26 +133,13 @@ qmxg = {
 {["value"] = 3, ["offset"] = 16, ["type"] = gg.TYPE_FLOAT},
 {["value"] = 3, ["offset"] = 20, ["type"] = gg.TYPE_FLOAT},
 }
---put0penb3t4
---step1
-gg.clearResults()
-gg.setRanges(131072)
-gg.searchNumber("790,580;856,128;856,130::", 4, false, 536870912, 0, -1)
-gg.searchNumber("856,128", 4, false, 536870912, 0, -1)
-local x = gg.getResults(10)
-gg.editAll("856133", 4)
-gg.clearResults()
---step2-n0reg10n
-gg.searchNumber("856,128;856,130;393,222::", 4, false, 536870912, 0, -1)
-gg.searchNumber("856,128", 4, false, 536870912, 0, -1)
-local y = gg.getResults(10)
-gg.editAll("856133", 4)
-gg.clearResults()
---step3-n0reg10n
-gg.searchNumber("196,610;1,280;196,608::", 4, false, 536870912, 0, -1)
-gg.searchNumber("196,608", 4, false, 536870912, 0, -1)
-local z = gg.getResults(20)
-gg.editAll("9999999999", 4, false, 536870912, 0, -1)
+--4g41n_1n51de
+gg.searchNumber("1.0;0.6;0.1;0.125::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(300)
+gg.editAll("9999999999", gg.TYPE_FLOAT)
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("2.718519e-43F;3.7615819e-37F;2.0F;0.00999999978F::200",gg.TYPE_FLOAT,false,gg.SIGN_EQUAL,0,-1)
 gg.clearResults()
 end
 
