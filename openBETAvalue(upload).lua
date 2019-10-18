@@ -131,7 +131,27 @@ qmxg = {
 {["value"] = 3, ["offset"] = 16, ["type"] = gg.TYPE_FLOAT},
 {["value"] = 3, ["offset"] = 20, ["type"] = gg.TYPE_FLOAT},
 }
-
+--put0penb3t4
+--step1
+gg.clearResults()
+gg.setRanges(131072)
+gg.searchNumber("790,580;856,128;856,130:17", 4, false, 536870912, 0, -1)
+gg.searchNumber("856,128", 4, false, 536870912, 0, -1)
+local x = gg.getResults(1)
+gg.editAll("856133", 4)
+gg.clearResults()
+--step2-n0reg10n
+gg.searchNumber("856,128;856,130;393,222:25", 4, false, 536870912, 0, -1)
+gg.searchNumber("856,128", 4, false, 536870912, 0, -1)
+local y = gg.getResults(1)
+gg.editAll("856133", 4)
+gg.clearResults()
+--step3-n0reg10n
+gg.searchNumber("196,610;1,280;196,608:25", 4, false, 536870912, 0, -1)
+gg.searchNumber("196,608", 4, false, 536870912, 0, -1)
+local z = gg.getResults(2)
+gg.editAll("9999999999", 4, false, 536870912, 0, -1)
+gg.clearResults()
 end
 
 -----------------------------------------------------------------------
