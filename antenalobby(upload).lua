@@ -64,8 +64,6 @@ gg.REGION_VIDEO)
 gg.skipRestoreState()
 -----------------------------------------------------------------------
 --code exit from your operating system
-print("💡YT: pensiunanhacker")
-print("https://t.me/pensiunanhacker")
 os.exit()
 end 
 -----------------------------------------------------------------------
