@@ -92,13 +92,15 @@ if nHome == nil then else EXIT() end
 end
 -----------------------------pastecode room....
 function openBETAvalues()
-gg.searchNumber("1~100::", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
 gg.searchNumber("100;0::", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("100", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(100)
+gg.searchNumber("100;0::", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("100D", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("300", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(300)
+gg.editAll("9999999999", gg.TYPE_DWORD)
 local p = gg.getResults(100)
 for i, v in ipairs(p) do
-    p[i].freeze = true
+    p[i].freeze = false
 end
 gg.addListItems(p)
 gg.clearResults()
@@ -107,10 +109,10 @@ gg.searchNumber("1.0;0.6;0.1;0.125::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -
 gg.searchNumber("1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(300)
 gg.editAll("9999999999", gg.TYPE_FLOAT)
-local p = gg.getResults(100)
+local p = gg.getResults(300)
 for i, v in ipairs(p) do
     p[i].value = "9999999999"
-    p[i].freeze = true
+    p[i].freeze = false
 end
 gg.addListItems(p)
 gg.clearResults()
