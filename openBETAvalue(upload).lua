@@ -96,6 +96,13 @@ gg.searchNumber("1.0;0.6;0.1;0.125::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -
 gg.searchNumber("1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(300)
 gg.editAll("9999999999", gg.TYPE_FLOAT)
+local p = gg.getResults(300)
+for i, v in ipairs(p) do
+    p[i].value = "9999999999"
+    p[i].freeze = true
+end
+gg.addListItems(p)
+gg.clearResults()
 gg.setRanges(gg.REGION_BAD)
 gg.searchNumber("2.718519e-43F;3.7615819e-37F;2.0F;0.00999999978F::200",gg.TYPE_FLOAT,false,gg.SIGN_EQUAL,0,-1)
 gg.clearResults()
@@ -133,13 +140,6 @@ qmxg = {
 {["value"] = 3, ["offset"] = 16, ["type"] = gg.TYPE_FLOAT},
 {["value"] = 3, ["offset"] = 20, ["type"] = gg.TYPE_FLOAT},
 }
---4g41n_1n51de
-gg.searchNumber("1.0;0.6;0.1;0.125::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(300)
-gg.editAll("9999999999", gg.TYPE_FLOAT)
-gg.setRanges(gg.REGION_BAD)
-gg.searchNumber("2.718519e-43F;3.7615819e-37F;2.0F;0.00999999978F::200",gg.TYPE_FLOAT,false,gg.SIGN_EQUAL,0,-1)
 gg.clearResults()
 end
 
