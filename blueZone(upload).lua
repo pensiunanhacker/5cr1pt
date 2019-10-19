@@ -15,8 +15,8 @@ end
 function bluezonehealth()
 --step1
 gg.clearResults()
-gg.setRanges(131072)
-gg.searchNumber("790580; 856128D; 856130 ::17", 4, false, 536870912, 0, -1)
+--no region
+gg.searchNumber("790580; 856128; 856130 ::17", 4, false, 536870912, 0, -1)
 gg.searchNumber("856128", 4, false, 536870912, 0, -1)
 gg.getResults(10)
 gg.editAll("856133", 4)
@@ -31,8 +31,8 @@ gg.clearResults()
 
 --step2
 gg.clearResults()
-gg.setRanges(131072)
-gg.searchNumber("393222; 856128D; 856130 ::25", 4, false, 536870912, 0, -1)
+--no region
+gg.searchNumber("393222; 856128; 856130 ::25", 4, false, 536870912, 0, -1)
 gg.searchNumber("856128", 4, false, 536870912, 0, -1)
 gg.getResults(10)
 gg.editAll("856133", 4)
@@ -55,7 +55,7 @@ gg.editAll("9999999999", 4, false, 536870912, 0, -1)
 local p = gg.getResults(5)
 for i, v in ipairs(p) do
 p[i].value = "9999999999"
-p[i].freeze = false
+p[i].freeze = true
 end
 gg.addListItems(p)
 gg.clearResults()
