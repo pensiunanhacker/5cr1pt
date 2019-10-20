@@ -42,7 +42,7 @@ gg.searchNumber("443", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(443)
 gg.editAll("4433", gg.TYPE_FLOAT)
 gg.clearResults()
-
+gg.toast("║▓▓▓▓▓░░░░░░░░░░║")
 gg.setRanges(gg.REGION_ANONYMOUS)
 gg.searchNumber("1.0F; -0.70710676908F; 0.70710670948F; 64.0F; 1.793662e-43F;1.4012985e-45F; 1D; 1D ::", gg.TYPE_FLOAT, false)
 gg.getResults(512)
