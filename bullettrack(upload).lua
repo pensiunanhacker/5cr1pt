@@ -67,11 +67,11 @@ gg.clearResults()
 
 --added effect
 gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber("10;45::" gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("10;45::" ,gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(512)
-gg.searchNumber("10;45" gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("10;45" ,gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(100)
-gg.editAll("9494.94" gg.TYPE_FLOAT)
+gg.editAll("9494.94" ,gg.TYPE_FLOAT)
 gg.clearResults()
 
 end
