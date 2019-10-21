@@ -30,11 +30,11 @@ gg.setRanges(gg.REGION_ANONYMOUS)
 gg.searchNumber("100;1;75;2.24207754e-44::", 16, false, 536870912, 0, -1)
 gg.searchNumber("2.24207754e-44", 16, false, 536870912, 0, -1)
 gg.getResults(1)
-gg.editAll("16000", gg.TYPE_FLOAT)
+gg.editAll("1000", gg.TYPE_FLOAT)
 local p = gg.getResults(1)
 for i, v in ipairs(p) do
-p[i].value = "16000"
-p[i].freeze = true
+p[i].value = "1000"
+p[i].freeze = false
 end
 gg.addListItems(p)
 gg.clearResults()
