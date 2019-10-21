@@ -35,7 +35,7 @@ gg.editAll("999999999", gg.TYPE_FLOAT)
 local p = gg.getResults(3)
 for i, v in ipairs(p) do
 p[i].value = "999999999"
-p[i].freeze = true
+p[i].freeze = false
 end
 gg.addListItems(p)
 gg.clearResults()
