@@ -19,6 +19,26 @@ gg.setRanges(gg.REGION_C_DATA)
 gg.searchNumber("-1,901,891,198,734,303,227", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(1)
 gg.editAll("-1,901,891,198,902,075,392", gg.TYPE_QWORD)
+local p = gg.getResults(10)
+for i, v in ipairs(p) do
+p[i].value = "-1,901,891,198,902,075,392"
+p[i].freeze = true
+end
+gg.addListItems(p)
+gg.clearResults()
+gg.clearResults()
+gg.clearResults()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("90.775703430176;0;8;15;16;18;28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll("900000000.775", gg.TYPE_FLOAT)
+local p = gg.getResults(10)
+for i, v in ipairs(p) do
+p[i].value = "900000000.775"
+p[i].freeze = true
+end
+gg.addListItems(p)
 gg.clearResults()
 gg.setRanges(gg.REGION_ANONYMOUS)
 gg.searchNumber("9.20161819458;23;25;30.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
