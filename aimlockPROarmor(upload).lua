@@ -27,15 +27,14 @@ gg.getResults(200)
 gg.editAll("999999999", gg.TYPE_FLOAT)
 gg.clearResults()
 gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber("100;1;75::", 16, false, 536870912, 0, -1)
-gg.setVisible(false)
-gg.searchNumber("100", 16, false, 536870912, 0, -1)
-gg.getResults(300)
-gg.editAll("999999999", gg.TYPE_FLOAT)
-local p = gg.getResults(3)
+gg.searchNumber("100;1;75;2.24207754e-44::", 16, false, 536870912, 0, -1)
+gg.searchNumber("2.24207754e-44", 16, false, 536870912, 0, -1)
+gg.getResults(1)
+gg.editAll("16000", gg.TYPE_FLOAT)
+local p = gg.getResults(1)
 for i, v in ipairs(p) do
-p[i].value = "999999999"
-p[i].freeze = false
+p[i].value = "16000"
+p[i].freeze = true
 end
 gg.addListItems(p)
 gg.clearResults()
