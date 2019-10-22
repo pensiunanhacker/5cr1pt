@@ -13,6 +13,16 @@ if nHome == nil then else EXIT() end
 end
 -----------------------------pastecode room....
 function bullet_track()
+
+--added effect
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("10;45::" ,gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(512)
+gg.searchNumber("10;45" ,gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll("9494.94" ,gg.TYPE_FLOAT)
+gg.clearResults()
+
 --bulltrack (step1)
 gg.setRanges(gg.REGION_ANONYMOUS)
 gg.searchNumber("25; 23; 30.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
@@ -63,15 +73,6 @@ p[i].value = "119.11911773682"
 p[i].freeze = false
 end
 --gg.addListItems--(p)
-gg.clearResults()
-
---added effect
-gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber("10;45::" ,gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(512)
-gg.searchNumber("10;45" ,gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(100)
-gg.editAll("9494.94" ,gg.TYPE_FLOAT)
 gg.clearResults()
 
 end
