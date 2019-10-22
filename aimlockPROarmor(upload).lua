@@ -3,7 +3,7 @@ function Home1()
 nHome = gg.choice (
 {
 --1
-"💢aimlock pro armor",
+"💢upgrade armor 20%",
 },
 nil,
 " ")
@@ -26,14 +26,15 @@ gg.searchNumber("3.5;1;0.5;200;20::", gg.TYPE_FLOAT)
 gg.getResults(200)
 gg.editAll("999999999", gg.TYPE_FLOAT)
 gg.clearResults()
+
 gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber("100;1;75;2.24207754e-44::", 16, false, 536870912, 0, -1)
-gg.searchNumber("2.24207754e-44", 16, false, 536870912, 0, -1)
-gg.getResults(1)
-gg.editAll("1000", gg.TYPE_FLOAT)
-local p = gg.getResults(1)
+gg.searchNumber("100;1;75F;2.24207754e-44::", 16, false, 536870912, 0, -1)
+gg.searchNumber("75", 16, false, 536870912, 0, -1)
+gg.getResults(3)
+gg.editAll("95", gg.TYPE_FLOAT)
+local p = gg.getResults(3)
 for i, v in ipairs(p) do
-p[i].value = "1000"
+p[i].value = "95"
 p[i].freeze = false
 end
 gg.addListItems(p)
