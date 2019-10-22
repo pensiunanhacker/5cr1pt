@@ -22,7 +22,18 @@ gg.editAll("-1,901,891,198,902,075,392", gg.TYPE_QWORD)
 local p = gg.getResults(10)
 for i, v in ipairs(p) do
 p[i].value = "-1,901,891,198,902,075,392"
-p[i].freeze = true
+p[i].freeze = false
+end
+gg.addListItems(p)
+gg.clearResults()
+gg.setRanges(gg.REGION_C_DATA)
+gg.searchNumber("-1,901,891,198,734,303,227", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(1)
+gg.editAll("-1,901,891,198,902,075,392", gg.TYPE_QWORD)
+local p = gg.getResults(10)
+for i, v in ipairs(p) do
+p[i].value = "-1,901,891,198,902,075,392"
+p[i].freeze = false
 end
 gg.addListItems(p)
 gg.clearResults()
