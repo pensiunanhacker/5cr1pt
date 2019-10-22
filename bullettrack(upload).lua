@@ -20,10 +20,10 @@ gg.setRanges(gg.REGION_ANONYMOUS)
 gg.searchNumber("90.775703430176;0;8;15;16;18;28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.searchNumber("28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(10)
-gg.editAll("900000000.775", gg.TYPE_FLOAT)
+gg.editAll("28000", gg.TYPE_FLOAT)
 local p = gg.getResults(10)
 for i, v in ipairs(p) do
-p[i].value = "900000000.775"
+p[i].value = "28000"
 p[i].freeze = false
 end
 gg.clearResults()
@@ -34,7 +34,7 @@ gg.searchNumber("10;45::" ,gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(512)
 gg.searchNumber("10;45" ,gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(100)
-gg.editAll("9494.94" ,gg.TYPE_FLOAT)
+gg.editAll("101;136" ,gg.TYPE_FLOAT)
 gg.clearResults()
 
 --bulltrack (step1)
