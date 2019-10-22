@@ -13,8 +13,9 @@ if nHome == nil then else EXIT() end
 end
 -----------------------------pastecode room....
 function aimlockproarmor()
-gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber("3.5;1.0;0.5;20::300", gg.TYPE_FLOAT)
+gg.setRanges(gg.REGION_ANONYMOUS |
+gg.REGION_C_BSS )
+gg.searchNumber("3.5;1;0.5;200", gg.TYPE_FLOAT)
 gg.getResults(200)
 gg.editAll("999999999", gg.TYPE_FLOAT)
 gg.clearResults()
