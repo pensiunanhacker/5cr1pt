@@ -14,6 +14,20 @@ end
 -----------------------------pastecode room....
 function bullet_track()
 
+gg.clearResults()
+gg.clearResults()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("90.775703430176;0;8;15;16;18;28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll("900000000.775", gg.TYPE_FLOAT)
+local p = gg.getResults(10)
+for i, v in ipairs(p) do
+p[i].value = "900000000.775"
+p[i].freeze = false
+end
+gg.clearResults()
+
 --added effect
 gg.setRanges(gg.REGION_ANONYMOUS)
 gg.searchNumber("10;45::" ,gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
