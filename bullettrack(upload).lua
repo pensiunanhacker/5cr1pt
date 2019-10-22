@@ -27,22 +27,6 @@ p[i].value = "28000"
 p[i].freeze = false
 end
 gg.clearResults()
-
---added effect
-gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber("10;45::" ,gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(512)
-gg.refineNumber("10" ,gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(100)
-gg.editAll("1010" ,gg.TYPE_FLOAT)
-gg.clearResults()
-gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber("1010;45::" ,gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(512)
-gg.refineNumber("45" ,gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(100)
-gg.editAll("4545" ,gg.TYPE_FLOAT)
-gg.clearResults()
 --bulltrack (step1)
 gg.setRanges(gg.REGION_ANONYMOUS)
 gg.searchNumber("25; 23; 30.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
@@ -60,7 +44,6 @@ p[i].freeze = false
 end
 --gg.addListItems--(p)
 gg.clearResults()
-
 --bulltrack (step2)
 gg.setRanges(gg.REGION_ANONYMOUS)
 gg.searchNumber("25; 176.17617797852; 30.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
@@ -92,14 +75,6 @@ for i, v in ipairs(p) do
 p[i].value = "119.11911773682"
 p[i].freeze = false
 end
---gg.addListItems--(p)
-gg.clearResults()
---climbwall 88.1m
-gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber("3.5032462e-44F;10.0F;45.0F", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("10", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(20)
-gg.editAll("88.1", gg.TYPE_FLOAT)
 gg.clearResults()
 end
 -----------------------------------------------------------------------
