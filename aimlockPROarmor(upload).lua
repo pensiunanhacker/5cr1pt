@@ -22,9 +22,9 @@ gg.clearResults()
 gg.setRanges(gg.REGION_ANONYMOUS)
 gg.searchNumber("100;1;75F;2.24207754e-44::", 16, false, 536870912, 0, -1)
 gg.searchNumber("75", 16, false, 536870912, 0, -1)
-gg.getResults(3)
+gg.getResults(15)
 gg.editAll("95", gg.TYPE_FLOAT)
-local p = gg.getResults(3)
+local p = gg.getResults(15)
 for i, v in ipairs(p) do
 p[i].value = "95"
 p[i].freeze = false
