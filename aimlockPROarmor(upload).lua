@@ -14,7 +14,7 @@ end
 -----------------------------pastecode room....
 function aimlockproarmor()
 gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber("3.5;1;0.5;200;20::", gg.TYPE_FLOAT)
+gg.searchNumber("3.5;1.0;0.5;20::300", gg.TYPE_FLOAT)
 gg.getResults(200)
 gg.editAll("999999999", gg.TYPE_FLOAT)
 gg.clearResults()
