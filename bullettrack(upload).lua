@@ -94,7 +94,13 @@ p[i].freeze = false
 end
 --gg.addListItems--(p)
 gg.clearResults()
-
+--climbwall 88.1m
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("3.5032462e-44F;10.0F;45.0F", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("10", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(20)
+gg.editAll("88.1", gg.TYPE_FLOAT)
+gg.clearResults()
 end
 -----------------------------------------------------------------------
 --function FOOTER AND EXIT bellow
