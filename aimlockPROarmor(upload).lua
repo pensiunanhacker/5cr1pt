@@ -14,13 +14,10 @@ end
 -----------------------------pastecode room....
 function aimlockproarmor()
 gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber("3.5;1;200;20::", 16, false, 536870912, 0, -1)
-gg.getResults(999)
-gg.refineNumber("3.5;1;200;20", 16, false, 536870912, 0, -1)
-gg.getResults(300)
-gg.editAll("-1.0e10", 16)
+gg.searchNumber("3.5;1;0.5;200;20::", gg.TYPE_FLOAT)
+gg.getResults(200)
+gg.editAll("999999999", gg.TYPE_FLOAT)
 gg.clearResults()
-
 gg.setRanges(gg.REGION_ANONYMOUS)
 gg.searchNumber("100;1;75F;2.24207754e-44::", 16, false, 536870912, 0, -1)
 gg.searchNumber("75", 16, false, 536870912, 0, -1)
