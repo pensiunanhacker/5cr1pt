@@ -51,9 +51,20 @@ gg.toast("║▓▓▓▓▓▓▓▓▓▓▓▓░░░║")
 gg.toast("║▓▓▓▓▓▓▓▓▓▓▓▓▓░░║")
 gg.toast("║▓▓▓▓▓▓▓▓▓▓▓▓▓▓░║")
 gg.toast("║▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓║")
-gg.alert("DONE \nfvck 🙈 where r u???")
+gg.toast("🙈 plz wait...")
 
-
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber( "200~250" , gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(3000)
+gg.refineNumber("200;220;250::512", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(512)
+gg.refineNumber("200;220;250::300", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(300)
+gg.refineNumber("200;220;250", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(20)
+gg.editAll("16000", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("☑done")
 end
 -----------------------------------------------------------------------
 --function FOOTER AND EXIT bellow
