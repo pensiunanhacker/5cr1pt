@@ -13,35 +13,29 @@ if nHome == nil then else EXIT() end
 end
 -----------------------------pastecode room....
 function aimlockproarmor()
-gg.setRanges(gg.REGION_ANONYMOUS |
-gg.REGION_C_BSS )
-gg.searchNumber("3.5;1;0.5;200", gg.TYPE_FLOAT)
-gg.getResults(200)
-gg.editAll("999999999", gg.TYPE_FLOAT)
-gg.clearResults()
 
 gg.setRanges(gg.REGION_ANONYMOUS)
 gg.refineNumber("200;220;250", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(512)
 gg.refineNumber("200", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(100)
-gg.editAll("333", gg.TYPE_FLOAT)
+gg.editAll("777", gg.TYPE_FLOAT)
 gg.clearResults()
 
 gg.setRanges(gg.REGION_ANONYMOUS)
-gg.refineNumber("333;220;250", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber("777;220;250", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(512)
 gg.refineNumber("220", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(100)
-gg.editAll("444", gg.TYPE_FLOAT)
+gg.editAll("888", gg.TYPE_FLOAT)
 gg.clearResults()
 
 gg.setRanges(gg.REGION_ANONYMOUS)
-gg.refineNumber("333;444;250", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber("777;888;250", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(512)
 gg.refineNumber("250", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(100)
-gg.editAll("555", gg.TYPE_FLOAT)
+gg.editAll("999", gg.TYPE_FLOAT)
 gg.clearResults()
 
 gg.setRanges(gg.REGION_ANONYMOUS)
