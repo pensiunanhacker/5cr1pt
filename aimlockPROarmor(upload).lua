@@ -19,18 +19,41 @@ gg.searchNumber("3.5;1;0.5;200", gg.TYPE_FLOAT)
 gg.getResults(200)
 gg.editAll("999999999", gg.TYPE_FLOAT)
 gg.clearResults()
+
+
 gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber("100;1;75F;2.24207754e-44::", 16, false, 536870912, 0, -1)
-gg.searchNumber("75", 16, false, 536870912, 0, -1)
-gg.getResults(15)
-gg.editAll("95", gg.TYPE_FLOAT)
-local p = gg.getResults(15)
-for i, v in ipairs(p) do
-p[i].value = "95"
-p[i].freeze = false
-end
-gg.addListItems(p)
-gg.clearResults()
+gg.searchNumber("3.2;1.09375;1F::9", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(200)
+gg.refineNumber("1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(200)
+gg.editAll("0", gg.TYPE_FLOAT)
+gg.clearResults(999)
+gg.alert("loading position changer...💥")
+gg.toast("║▓░░░░░░░░░░░░░░║")
+gg.toast("║▓▓░░░░░░░░░░░░░║")
+gg.toast("║▓▓▓░░░░░░░░░░░░║")
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("10000;20000::", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(300)
+gg.toast("║▓▓▓▓░░░░░░░░░░░║")
+gg.toast("║▓▓▓▓▓░░░░░░░░░░║")
+gg.toast("║▓▓▓▓▓▓░░░░░░░░░║")
+gg.toast("║▓▓▓▓▓▓▓░░░░░░░░║")
+gg.refineNumber("10000", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(300)
+gg.toast("║▓▓▓▓▓▓▓▓░░░░░░░║")
+gg.toast("║▓▓▓▓▓▓▓▓▓░░░░░░║")
+gg.toast("║▓▓▓▓▓▓▓▓▓▓░░░░░║")
+gg.toast("║▓▓▓▓▓▓▓▓▓▓▓░░░░║")
+gg.editAll("-10000", gg.TYPE_DWORD)
+gg.clearResults(999)
+gg.toast("║▓▓▓▓▓▓▓▓▓▓▓▓░░░║")
+gg.toast("║▓▓▓▓▓▓▓▓▓▓▓▓▓░░║")
+gg.toast("║▓▓▓▓▓▓▓▓▓▓▓▓▓▓░║")
+gg.toast("║▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓║")
+gg.alert("DONE \nfvck 🙈 where r u???")
+
+
 end
 -----------------------------------------------------------------------
 --function FOOTER AND EXIT bellow
