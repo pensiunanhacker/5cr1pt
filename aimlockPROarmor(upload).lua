@@ -42,7 +42,7 @@ gg.setRanges(gg.REGION_ANONYMOUS)
 gg.searchNumber("3.0828566e-44;88;88;1;1;1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.searchNumber("1", gg.TYPE_FLOAT, false)
 gg.getResults(50)
-gg.editAll("0.12", gg.TYPE_FLOAT)
+gg.editAll("0.012", gg.TYPE_FLOAT)
 
 gg.toast("☑done")
 end
