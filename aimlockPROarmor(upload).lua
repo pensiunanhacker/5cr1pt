@@ -34,6 +34,14 @@ gg.getResults(50)
 gg.editAll("0",gg.TYPE_FLOAT)
 gg.clearResults()
 
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("3.2;1.09375;1F::9", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(1000)
+gg.searchNumber("1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(200)
+gg.editAll("-0", gg.TYPE_FLOAT)
+gg.clearResults()
+
 gg.toast("☑done")
 end
 -----------------------------------------------------------------------
