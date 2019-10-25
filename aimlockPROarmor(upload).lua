@@ -14,16 +14,6 @@ end
 -----------------------------pastecode room....
 function aimlockproarmor()
 
---aimbot enak
---active on game
-gg.clearResults()
-gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber("0;1.19193046077e-40;1;-9.6172094345093e-05;1.6815581571898e-44::384", gg.TYPE_DWORD, false)
-gg.getResults(400)
-gg.refineNumber("0", gg.TYPE_DWORD, false)
-gg.getResults(10)
-gg.editAll("131120.0", gg.TYPE_DWORD)
-gg.clearResults()
 
 gg.setRanges(gg.REGION_ANONYMOUS)
 gg.refineNumber("200;220;250", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
@@ -55,6 +45,18 @@ gg.getResults(50)
 gg.editAll("0.124", gg.TYPE_FLOAT)
 gg.clearResults()
 --88 (dont change)
+
+--aimbot enak
+--active on game
+gg.clearResults()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("0;1.19193046077e-40;1;-9.6172094345093e-05;1.6815581571898e-44::384", gg.TYPE_DWORD, false)
+gg.getResults(400)
+gg.refineNumber("0", gg.TYPE_DWORD, false)
+gg.getResults(10)
+gg.editAll("131120.0", gg.TYPE_DWORD)
+gg.clearResults()
+
 gg.toast("☑done")
 end
 -----------------------------------------------------------------------
