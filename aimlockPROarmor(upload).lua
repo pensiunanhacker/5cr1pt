@@ -13,25 +13,6 @@ if nHome == nil then else EXIT() end
 end
 -----------------------------pastecode room....
 function aimlockproarmor()
-
-
-
-gg.setRanges(gg.REGION_ANONYMOUS)
-gg.refineNumber("200;220;250", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(512)
-gg.refineNumber("220", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(100)
-gg.editAll("999", gg.TYPE_FLOAT)
-gg.clearResults()
-
-gg.setRanges(gg.REGION_ANONYMOUS)
-gg.refineNumber("200;999;250", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(512)
-gg.refineNumber("250", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(100)
-gg.editAll("999", gg.TYPE_FLOAT)
-gg.clearResults()
-
 gg.setRanges(gg.REGION_ANONYMOUS)
 gg.searchNumber("3.0828566e-44;88;88;1;1;1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.searchNumber("1", gg.TYPE_FLOAT, false)
@@ -39,13 +20,62 @@ gg.getResults(50)
 gg.editAll("0.001", gg.TYPE_FLOAT)
 gg.clearResults()
 
+--nobullet
 gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber("3.0828566e-44;88;88; 0.001; 0.001; 0.001", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("3.0828566e-44", gg.TYPE_FLOAT, false)
-gg.getResults(50)
-gg.editAll("0", gg.TYPE_FLOAT)
+gg.searchNumber("88000;0.08600000292", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(512)
+gg.refineNumber("88000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(333)
+gg.editAll("0.37", gg.TYPE_FLOAT)
 gg.clearResults()
---88 (dont change)
+
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("90000;0.07500000298", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(512)
+gg.refineNumber("90000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(333)
+gg.editAll("0.37", gg.TYPE_FLOAT)
+gg.clearResults()
+
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("71500;0.109", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(512)
+gg.refineNumber("71500", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(333)
+gg.editAll("0.37", gg.TYPE_FLOAT)
+gg.clearResults()
+
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("91500;0.07500000298", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(512)
+gg.refineNumber("91500", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(333)
+gg.editAll("0.37", gg.TYPE_FLOAT)
+gg.clearResults()
+
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("85300;0.09000000358", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(512)
+gg.refineNumber("85300", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(333)
+gg.editAll("0.37", gg.TYPE_FLOAT)
+gg.clearResults()
+
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("87000; 0.09229999781; 0.86;  0.09600000083 ::512 ", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(512)
+gg.refineNumber("87000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(333)
+gg.editAll("0.37", gg.TYPE_FLOAT)
+gg.clearResults()
+
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber(" 71500~99000 ", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(3333)
+gg.refineNumber(" 71500; 76000;  78000; 79000;  80000;  84000;  94500;  99000  ", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(333)
+gg.editAll("0.37", gg.TYPE_FLOAT)
+gg.clearResults()
 
 gg.toast("☑done")
 end
