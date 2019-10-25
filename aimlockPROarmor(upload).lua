@@ -14,27 +14,30 @@ end
 -----------------------------pastecode room....
 function aimlockproarmor()
 
+--aimbot enak
+--active on game
+gg.clearResults()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("0;1.19193046077e-40;1;-9.6172094345093e-05;1.6815581571898e-44::384", gg.TYPE_DWORD, false)
+gg.getResults(400)
+gg.refineNumber("0", gg.TYPE_DWORD, false)
+gg.getResults(10)
+gg.editAll("131120.0", gg.TYPE_DWORD)
+gg.clearResults()
+
 gg.setRanges(gg.REGION_ANONYMOUS)
 gg.refineNumber("200;220;250", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(512)
-gg.refineNumber("200", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(100)
-gg.editAll("777", gg.TYPE_FLOAT)
-gg.clearResults()
-
-gg.setRanges(gg.REGION_ANONYMOUS)
-gg.refineNumber("777;220;250", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(512)
 gg.refineNumber("220", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(100)
-gg.editAll("888", gg.TYPE_FLOAT)
+gg.getResults(200)
+gg.editAll("999", gg.TYPE_FLOAT)
 gg.clearResults()
 
 gg.setRanges(gg.REGION_ANONYMOUS)
-gg.refineNumber("777;888;250", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber("200;999;250", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(512)
 gg.refineNumber("250", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(100)
+gg.getResults(200)
 gg.editAll("999", gg.TYPE_FLOAT)
 gg.clearResults()
 
@@ -42,8 +45,16 @@ gg.setRanges(gg.REGION_ANONYMOUS)
 gg.searchNumber("3.0828566e-44;88;88;1;1;1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.searchNumber("1", gg.TYPE_FLOAT, false)
 gg.getResults(50)
-gg.editAll("0.012", gg.TYPE_FLOAT)
+gg.editAll("0.123", gg.TYPE_FLOAT)
+gg.clearResults()
 
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("3.0828566e-44;88;88;0.123;0.123;0.123", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("3.0828566e-44", gg.TYPE_FLOAT, false)
+gg.getResults(50)
+gg.editAll("0.124", gg.TYPE_FLOAT)
+gg.clearResults()
+--88 (dont change)
 gg.toast("☑done")
 end
 -----------------------------------------------------------------------
