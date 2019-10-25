@@ -71,16 +71,6 @@ gg.getResults(333)
 gg.editAll("0.37", gg.TYPE_FLOAT)
 gg.clearResults()
 
-gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber("3.0828566e-44;88;88;1F;1F;1F", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(500)
-gg.refineNumber("1", gg.TYPE_FLOAT, false)
-gg.getResults(50)
-gg.editAll("0.001", gg.TYPE_FLOAT)
-gg.clearResults()
---3.0828566e-44 (dont change)
---88 (dont change)
-
 gg.toast("☑done")
 end
 -----------------------------------------------------------------------
