@@ -14,17 +14,21 @@ end
 -----------------------------pastecode room....
 function aimlockproarmor()
 
---lowdmgbullet
+--fulldmgbullet
 
 gg.clearResults()
-
+gg.searchNumber("3.5;1;0.5;200;20::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(600)
+gg.editAll("999", gg.TYPE_FLOAT)
+gg.clearResults()
 gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber(" 71500~99000 ", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(3333)
-gg.refineNumber(" 71500; 76000;  78000; 79000;  80000;  84000;  94500;  99000  ", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(333)
-gg.editAll("34701", gg.TYPE_FLOAT)
+gg.searchNumber("-88.82363891602F;15.0F;1", gg.TYPE_FLOAT)
+gg.searchNumber("1", gg.TYPE_FLOAT)
+gg.getResults(2000)
+gg.editAll("20000000000000", gg.TYPE_FLOAT)
 gg.clearResults()
+end
 
 gg.toast("☑done")
 end
