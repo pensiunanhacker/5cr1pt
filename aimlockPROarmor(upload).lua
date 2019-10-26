@@ -29,6 +29,14 @@ gg.getResults(2000)
 gg.editAll("20000000000000", gg.TYPE_FLOAT)
 gg.clearResults()
 end
+--step 
+gg.clearResults()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("64;128D;0;0D;1D::20", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("0", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll("1", gg.TYPE_DWORD)
+gg.clearResults()
 
 gg.toast("☑done")
 end
