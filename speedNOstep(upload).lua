@@ -13,14 +13,7 @@ if nHome == nil then else EXIT() end
 end
 -----------------------------pastecode room....
 function speedNOstep()
---Decrease Fall
-gg.clearResults()
-gg.setRanges(32)
-gg.searchNumber("1.0F;0.6;0.1;0.125F::55", 16, false, 536870912, 0, -1)
-gg.searchNumber("1", 16, false, 536870912, 0, -1)
-gg.getResults(100)
-gg.editAll("1.3", 16)
-gg.clearResults()
+
 --No Foot Step 
 gg.clearResults()
 gg.setRanges(32)
@@ -31,6 +24,7 @@ gg.searchNumber("0.96666663885117", 16, false, 536870912, 0, -1)
 gg.getResults(3)
 gg.editAll("999.9949", 16)
 gg.clearResults()
+
 --Speed Knock
 gg.clearResults()
 gg.setRanges(32)
