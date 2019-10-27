@@ -39,14 +39,6 @@ gg.searchNumber("1", 16, false, 536870912, 0, -1)
 gg.getResults(100)
 gg.editAll("9999", 16)
 gg.clearResults()
---Huga Enemy
-gg.clearResults()
-gg.setRanges(16)
-gg.clearResults()
-gg.searchNumber("-28,767,403,185,799,424;4,575,657,222,473,777,152", 32, false, 536870912, 0, -1)
-gg.searchNumber("4,575,657,222,473,777,152", 32, false)
-gg.getResults(10)
-gg.editAll("4,575,657,222,474,196,582", 32)
 gg.clearResults()
 end
 -----------------------------------------------------------------------
